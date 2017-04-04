@@ -1,8 +1,7 @@
 <div class="jumbotron">
-  <h1>Welcome to Shop!</h1>
-  <p>Here you can purchase all kinds of computer hardware for lowest prices. We sell from only trusted and large distributors,
-  to fulfill all your DIY computer needs!</p>
-  <p><a href="#" class="btn btn-primary btn-lg">Learn more</a></p>
+  <h1><%= t ".welcome" %></h1>
+  <p><%= t ".welcome_message" %></p>
+  <p><a href="#" class="btn btn-primary btn-lg"><%= t ".learn_more" %></a></p>
 </div>
 
 <div class="row">
@@ -10,12 +9,12 @@
   <div class="col-sm-3">
     <div class="panel panel-default" id="cart">
       <div class="panel-heading">
-        <h3 class="panel-title">Categories</h3>
+        <h3 class="panel-title"><%= t ".categories" %></h3>
       </div>
       <div class="panel-body">
         <ul>
         <% Category.all.each do |category| %>
-            <li><a href="#"><%= category.name %></a></li>
+            <li><a href="#"><%= category.send("name_" + "#{I18n.locale}") %></a></li>
         <% end %>
         </ul>
       </div>
@@ -34,12 +33,12 @@
         <div class="col-sm-6 product-item">
           <div class="panel panel-default">
             <div class="panel-body">
-              <h3><%= product.title %></h3>
+              <h3><%= product.send("title_" + "#{I18n.locale}") %></h3>
               <div class="img" style="background-image: url('<%= image_path product_image(product.id) %>');"></div>
               <h4>$<%= product.price %></h4>
               <p>
-                <button class="btn btn-default">View</button>
-                <button class="btn btn-primary">Add to cart</button>
+                <button class="btn btn-default"><%= t ".view" %></button>
+                <button class="btn btn-primary"><%= t '.add_to_cart' %></button>
               </p>
             </div>
           </div>
@@ -57,10 +56,10 @@
   <div class="col-sm-3">
       <div class="panel panel-default" id="cart">
         <div class="panel-heading">
-          <h3 class="panel-title">Cart</h3>
+          <h3 class="panel-title"><%= t ".cart" %></h3>
         </div>
         <div class="panel-body">
-          Your cart is empty
+          <%= t ".your_cart_is_empty" %>
         </div>
       </div>
   </div>
