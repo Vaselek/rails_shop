@@ -29,8 +29,6 @@ ru:
     previous_label: "&#8592; Назад"
     next_label: "Далее &#8594;"
     page_gap: "&hellip;"
-
-
   products:
     index:
       title: "Наименование"
@@ -50,4 +48,28 @@ ru:
     name: "Имя"
     password_confirmation: "Подтвердить пароль"
     characters_minimum: "знаков минимально"
-    
+  admin:
+    shop_admin: "Админка магазина"
+    categories: "Категории"
+    products: "Продукты"
+    view_shop: "Просмотр магазина"
+    add_category: "Добавить категорию"
+    name: "Наименование"
+    actions: "Действия"
+    delete: "Удалить"
+    new_product: "Новый продукт"
+    image: "Изображение"
+    title: "Наименование"
+    description: "Описание"
+    price: "Стоимость"
+    category: "Категория"
+    view: "Просмотр"
+    edit: "Редактировать"
+    picture: "Рисунок"
+
+  activerecord:
+    errors:
+      models:
+        product:
+          attrubutes:
+            price: "Стоимость"

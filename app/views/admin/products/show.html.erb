@@ -1,10 +1,10 @@
-<h1><%= @product.title %></h1>
-<p><%= @product.description %></p>
+<h1><%= @product.send("title_" + "#{I18n.locale}") %></h1>
+<p><%= @product.send("description_" + "#{I18n.locale}") %></p>
 <p>
     Price: <b><%= @product.price %></b>
 </p>
 <p>
-    <b>Category: </b> <%= @product.category.name %>
+    <b>Category: </b> <%= @product.category.send("name_" + "#{I18n.locale}") %>
 </p>
 <div>
     <%= link_to 'Back to list', admin_products_path %>

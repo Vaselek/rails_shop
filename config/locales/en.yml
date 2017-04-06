@@ -51,5 +51,21 @@ en:
     name: "Name"
     password_confirmation: "Password confirmation"
     characters_minimum: "characters minimum"
-
-
+  admin:
+    shop_admin: "Shop Admin"
+    categories: "Categories"
+    products: "Prpducts"
+    view_shop: "View Shop"
+    add_category: "Add Category"
+    name: "Name"
+    actions: "Actions"
+    delete: "Delete"
+    new_product: "New Product"
+    image: "Image"
+    title: "Title"
+    description: "Description"
+    price: "Price"
+    category: "Category"
+    view: "View"
+    edit: "Edit"
+    picture: "Picture"
