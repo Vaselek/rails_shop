@@ -29,6 +29,11 @@ ru:
     previous_label: "&#8592; Назад"
     next_label: "Далее &#8594;"
     page_gap: "&hellip;"
+  logged_in_as: "Логин: "
+  account: "Аккаунт"
+  admin_panel: "Панель админа"
+  edit_profile: "Редактировать профиль"
+  view_orders: "Просмотр заказов"
   products:
     index:
       title: "Наименование"
@@ -37,6 +42,7 @@ ru:
       welcome_message: "Здесь Вы можете приобрести любые компьютерные товары по самым низким ценам!"
       learn_more: "Узнать больше"
       categories: "Категории"
+      category: "Категория"
       view: "Просмотр"
       add_to_cart: "Добавить в корзину"
       cart: "Корзина"
@@ -66,10 +72,16 @@ ru:
     view: "Просмотр"
     edit: "Редактировать"
     picture: "Рисунок"
+    avatar: "Аватар"
+
 
   activerecord:
     errors:
-      models:
-        product:
-          attrubutes:
-            price: "Стоимость"
+      product:
+        attributes:
+          title_en: 'Наименование на английском'
+          title_ru: 'Наименование на русском'
+          description: 'Описание'
+          image: 'Изображение'
+          price_en: 'Цена'
+          price_ru: 'Цена'

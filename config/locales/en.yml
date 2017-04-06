@@ -24,6 +24,11 @@ en:
   sign_up: "Sign up"
   shop: "Shop"
   sign_out: "Sign out"
+  logged_in_as: "Logged in as"
+  account: "Account"
+  admin_panel: "Admin Panel"
+  edit_profile: "Edit Profile"
+  view_orders: "View Orders"
   will_paginate:
     previous_label: "&#8592; Previous"
     next_label: "Next &#8594;"
@@ -39,7 +44,8 @@ en:
       welcome_message: "Here you can purchase all kinds of computer hardware for lowest prices. We sell from only trusted and large distributors,
   to fulfill all your DIY computer needs!"
       learn_more: "Learn more"
-      categories: Categories
+      categories: "Categories"
+      category: "Category"
       view: "View"
       add_to_cart: "Add to cart"
       cart: "Cart"
@@ -54,7 +60,7 @@ en:
   admin:
     shop_admin: "Shop Admin"
     categories: "Categories"
-    products: "Prpducts"
+    products: "Products"
     view_shop: "View Shop"
     add_category: "Add Category"
     name: "Name"
@@ -69,3 +75,4 @@ en:
     view: "View"
     edit: "Edit"
     picture: "Picture"
+    avatar: "Avatar"

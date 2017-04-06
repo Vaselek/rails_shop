@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div row>
+    <div class="col-sm-6">
+      <%= image_tag @product.picture_url(:medium) %>
+    </div>
+    <div class="col-sm-6">
+      <h2><strong><%= t "products.index.title" %></strong> <%= @product.send("title_" + "#{I18n.locale}") %></h2>
+      <h5><strong><%= t "products.index.description" %></strong> <%= @product.send("description_" + "#{I18n.locale}")  %></h5>
+      <h5><strong><%= t "products.index.price" %></strong> <%= @product.price %></h5>
+    </div>
+  </div>
+
+
+</div>
