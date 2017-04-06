@@ -2,6 +2,7 @@ class Product < ActiveRecord::Base
   belongs_to :category
 
   validates :title_en, presence: true, length: { maximum: 250 }
+
   validates :title_ru, presence: true, length: { maximum: 250 }
 
 

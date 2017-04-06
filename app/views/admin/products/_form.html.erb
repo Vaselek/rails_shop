@@ -1,18 +1,34 @@
 <%= form_for [:admin, @product], html: {class: 'form-horizontal'} do |f| %>
 
-    <div class="form-group <%= 'has-error' if @product.errors[:title].any? %>">
-      <%= f.label (t "admin.title"), class: 'col-sm-2 control-label' %>
+    <div class="form-group <%= 'has-error' if @product.errors[:title_en].any? %>">
+      <%= f.label (t 'admin.title_en'), class: 'col-sm-2 control-label' %>
       <div class="col-sm-10">
-        <%= f.text_field "title_#{I18n.locale}".to_sym , class: 'form-control' %>
-        <%= render 'shared/field_errors', object: @product, field_name: :title %>
+        <%= f.text_field :title_en , class: 'form-control' %>
+        <%= render 'shared/field_errors', object: @product, field_name: :title_en %>
       </div>
     </div>
 
-    <div class="form-group <%= 'has-error' if @product.errors[:description].any? %>">
-      <%= f.label (t "admin.description"), class: 'col-sm-2 control-label' %>
+    <div class="form-group <%= 'has-error' if @product.errors[:title_ru].any? %>">
+      <%= f.label (t 'admin.title_ru'), class: 'col-sm-2 control-label' %>
       <div class="col-sm-10">
-        <%= f.text_area "description_#{I18n.locale}".to_sym, class: 'form-control' %>
-        <%= render 'shared/field_errors', object: @product, field_name: :description %>
+        <%= f.text_field :title_ru, class: 'form-control' %>
+        <%= render 'shared/field_errors', object: @product, field_name: :title_ru %>
+      </div>
+    </div>
+
+    <div class="form-group <%= 'has-error' if @product.errors[:description_en].any? %>">
+      <%= f.label (t "admin.description_en"), class: 'col-sm-2 control-label' %>
+      <div class="col-sm-10">
+        <%= f.text_area :description_en, class: 'form-control' %>
+        <%= render 'shared/field_errors', object: @product, field_name: :description_en %>
+      </div>
+    </div>
+
+    <div class="form-group <%= 'has-error' if @product.errors[:description_ru].any? %>">
+      <%= f.label (t "admin.description_ru"), class: 'col-sm-2 control-label' %>
+      <div class="col-sm-10">
+        <%= f.text_area :description_ru, class: 'form-control' %>
+        <%= render 'shared/field_errors', object: @product, field_name: :description_ru %>
       </div>
     </div>
 

@@ -65,23 +65,13 @@ ru:
     delete: "Удалить"
     new_product: "Новый продукт"
     image: "Изображение"
-    title: "Наименование"
-    description: "Описание"
+    title_en: "Наименование на английском"
+    title_ru: "Наименование на русском"
+    description_en: "Описание на английском"
+    description_ru: "Описание на русском"
     price: "Стоимость"
     category: "Категория"
     view: "Просмотр"
     edit: "Редактировать"
     picture: "Рисунок"
     avatar: "Аватар"
-
-
-  activerecord:
-    errors:
-      product:
-        attributes:
-          title_en: 'Наименование на английском'
-          title_ru: 'Наименование на русском'
-          description: 'Описание'
-          image: 'Изображение'
-          price_en: 'Цена'
-          price_ru: 'Цена'
