@@ -20,21 +20,24 @@
         <li><%= link_to_unless_current "Русский", locale: 'ru' %></li>
       </ul>
         <% if user_signed_in? %>
-          <p class="navbar-text">
-            Logged in as <%= current_user.name %>
-          </p>
           <ul class="nav navbar-nav">
+            <li class="navbar-text">
+              Logged in as <%= current_user.name %>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <% if current_user.admin? %>
                   <li><%= link_to 'Admin Panel', admin_root_path %></li>
                 <% end %>
-                <li><%= link_to 'Edit profile' %></li>
+                <li><%= link_to 'Edit profile', edit_user_registration_path %></li>
                 <li><a href="#">View orders</a></li>
                 <li class="divider"></li>
                 <li><%= link_to (t 'sign_out'), destroy_user_session_path, method: :delete %></li>
               </ul>
+            </li>
+            <li>
+              <%= image_tag current_user.avatar_url, class: "img-circle", size: "45x45" %>
             </li>
           </ul>
         <% else %>
